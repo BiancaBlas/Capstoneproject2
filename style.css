@@ -1,0 +1,128 @@
+html {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 20px;
+}
+p,
+li {
+  font-family: "Reddit Sans", sans-serif;
+}
+body {
+  margin: 0px;
+}
+main {
+  padding: 5rem;
+  max-width: 1200px;
+  margin: auto;
+}
+h1 {
+  color: #6c22a6;
+}
+h2 {
+  color: #6962ad;
+}
+h3 {
+  color: #83c0c1;
+}
+a {
+  color: #6c22a6;
+  text-decoration: none;
+}
+#logo1 {
+  position: absolute;
+  height: 100px;
+  margin-top: 50vh;
+  margin-left: 10%;
+}
+#logo2 {
+  position: absolute;
+  height: 150px;
+  right: 5%;
+}
+.introduction {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  background-color: #96e9c6;
+}
+.introduction img {
+  height: 200px;
+  border-radius: 50%;
+  margin: 3rem;
+}
+.compartiment {
+  margin-bottom: 10rem;
+}
+.resumepart {
+  margin-bottom: 3rem;
+}
+.projects ul {
+  list-style-type: none;
+  padding: 0px;
+}
+.projects li {
+  margin-bottom: 0.8rem;
+}
+.projects img {
+  width: 40%;
+  float: left;
+  margin-right: 4%;
+  border-radius: 8%;
+  border: #6c22a6 solid;
+}
+
+.hobbies img {
+  width: 80%;
+  margin-top: 1rem;
+  justify-self: right;
+  border-radius: 8%;
+}
+.hobbies {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+}
+.hobbies h2 {
+  grid-column: span 2;
+}
+.contact {
+  background-color: #96e9c6;
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  padding: 2rem;
+  border-radius: 8%;
+  margin: auto;
+  text-align: center;
+}
+
+@media (max-width: 1000px) {
+  main {
+    padding: 3rem;
+  }
+}
+@media (max-width: 900px) {
+  main {
+    padding: 2rem;
+  }
+  .projects img {
+    margin-right: 2%;
+  }
+  .projects li {
+    margin-bottom: 0.5rem;
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 760px) {
+  .hobbies {
+    display: flex;
+    flex-direction: column;
+  }
+  .projects img {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+}
