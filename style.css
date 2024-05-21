@@ -8,6 +8,7 @@ li {
 }
 body {
   margin: 0px;
+  background-color: #6962ad;
 }
 main {
   padding: 5rem;
@@ -30,7 +31,7 @@ a {
 #logo1 {
   position: absolute;
   height: 100px;
-  margin-top: 50vh;
+  margin-top: 60vh;
   margin-left: 10%;
 }
 #logo2 {
@@ -39,7 +40,7 @@ a {
   right: 5%;
 }
 .introduction {
-  height: 80vh;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -54,6 +55,8 @@ a {
 }
 .compartiment {
   margin-bottom: 10rem;
+  background-color: white;
+  padding: 2rem;
 }
 .resumepart {
   margin-bottom: 3rem;
@@ -62,15 +65,20 @@ a {
   list-style-type: none;
   padding: 0px;
 }
-.projects li {
-  margin-bottom: 0.8rem;
-}
+
 .projects img {
-  width: 40%;
-  float: left;
-  margin-right: 4%;
+  width: 100%;
   border-radius: 8%;
+}
+.project {
   border: #6c22a6 solid;
+  border-radius: 8%;
+  padding: 2rem;
+}
+.projects ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2rem;
 }
 
 .hobbies img {
@@ -98,6 +106,11 @@ a {
   text-align: center;
 }
 
+@media (max-width: 1200px) {
+  .project {
+    padding: 1rem;
+  }
+}
 @media (max-width: 1000px) {
   main {
     padding: 3rem;
@@ -107,12 +120,11 @@ a {
   main {
     padding: 2rem;
   }
-  .projects img {
-    margin-right: 2%;
-  }
   .projects li {
-    margin-bottom: 0.5rem;
     font-size: 18px;
+  }
+  .projects ul {
+    gap: 1rem;
   }
 }
 
@@ -121,8 +133,44 @@ a {
     display: flex;
     flex-direction: column;
   }
-  .projects img {
-    width: 100%;
-    margin-bottom: 1rem;
+
+  .projects ul {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  #logo1 {
+    height: 50px;
+  }
+  #logo2 {
+    height: 100px;
+  }
+  .introduction img {
+    margin: 1rem;
+  }
+  main {
+    padding: 3rem 0px;
+  }
+  .projects ul {
+    display: flex;
+    flex-direction: column;
+  }
+  .project {
+    margin-bottom: 4%;
+  }
+}
+
+@media (max-height: 500px) {
+  /* hier moet ik nog even naar kijken */
+  #logo1 {
+    height: 50px;
+  }
+  #logo2 {
+    height: 100px;
+  }
+  .introduction img {
+    height: 150px;
+    margin: 1rem;
   }
 }
