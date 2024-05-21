@@ -208,6 +208,6 @@ input[type="submit"]:hover {
     grid-template-rows: auto auto auto;
     gap: 0.5rem;
   }
-  #button {
+  label{
+    text-align: right;
   }
-}
